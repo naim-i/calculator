@@ -11,11 +11,13 @@ export default {
         center: true,
       },
       screens: {
+        xs: "375px",
         sm: "600px",
         md: "728px",
         lg: "984px",
         xl: "1240px",
         "2xl": "1496px",
+        "3xl": "1920px",
       },
       fontFamily: {
         PrimaryFont: ["DM Sans", "serif"],

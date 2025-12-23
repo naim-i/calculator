@@ -44,10 +44,10 @@ const Contact = () => {
             </div>
             {/* Contact bottom */}
             <div className="pt-12 text-center border-t-2 border-yellow-600/40 mt-16">
-              <h5 className="text-yellow-400 text-xl font-bold mt-12">
+              <h5 className="text-yellow-400 text-2xl font-bold mt-12">
                 Report an Issue
               </h5>
-              <p className="text-yellow-600/95 text-lg">
+              <p className="text-yellow-600/95 text-lg mt-6">
                 If you find any errors, bugs, or incorrect calculations, please
                 let us know — accuracy is our top priority.
               </p>

@@ -11,7 +11,7 @@ import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-100 w-full pb-10 pt-10">
+    <div className="bg-gray-50 w-full pb-10 pt-10">
       <Container>
         <div className=" justify-center items-center pt-20">
           <Flex className="justify-between">
@@ -19,7 +19,7 @@ const Footer = () => {
               <Logo />
             </div>
             <div className="w-[30%]">
-              <h1 className="text-3xl text-black font-bold">Calculators</h1>
+              <h1 className="text-3xl text-yellow-900 font-bold">Calculators</h1>
               <List className="pt-3">
                 {FdataOne.map((item, i) => (
                   <ListItems
@@ -32,7 +32,7 @@ const Footer = () => {
               </List>
             </div>
             <div className="w-[30%]">
-              <h1 className="text-3xl text-black font-bold">Social Media</h1>
+              <h1 className="text-3xl text-yellow-900 font-bold">Social Media</h1>
               <List className="pt-3">
                 {FdataTwo.map((item, i) => (
                   <ListItems
