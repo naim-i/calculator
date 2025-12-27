@@ -16,6 +16,16 @@ const Navbar = () => {
   let userRef = useRef();
 
   useEffect(() => {
+    const handleResize = (e) => {
+      if (window.innerWidth < 1024) {
+        setshow(false);
+      } else {
+        setshow(true);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
     document.body.addEventListener("click", (e) => {
       if (userRef.current.contains(e.target)) {
         setshow(true);
@@ -23,15 +33,6 @@ const Navbar = () => {
         setshow(false);
       }
     });
-    // const handleResize = (e) => {
-    //   if (window.innerWidth < 1024) {
-    //     setshow(false);
-    //   } else {
-    //     setshow(true);
-    //   }
-    // };
-    // handleResize();
-    // window.addEventListener("resize", handleResize);
   }, []);
 
   // const handleClick = () => {
