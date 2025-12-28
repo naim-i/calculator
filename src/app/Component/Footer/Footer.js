@@ -14,12 +14,14 @@ const Footer = () => {
     <div className="bg-gray-50 w-full pb-10 pt-10">
       <Container>
         <div className=" justify-center items-center pt-20">
-          <Flex className="justify-between">
-            <div>
+          <Flex className="lg:justify-between items-center lg:items-start text-center lg:text-left flex-col lg:flex-row ">
+            <div className="w-[50%] lg:w-auto">
               <Logo />
             </div>
-            <div className="w-[30%]">
-              <h1 className="text-3xl text-yellow-900 font-bold">Calculators</h1>
+            <div className="lg:w-[30%] py-10 lg:py-0">
+              <h1 className="text-3xl text-yellow-900 font-bold">
+                Calculators
+              </h1>
               <List className="pt-3">
                 {FdataOne.map((item, i) => (
                   <ListItems
@@ -31,8 +33,10 @@ const Footer = () => {
                 ))}
               </List>
             </div>
-            <div className="w-[30%]">
-              <h1 className="text-3xl text-yellow-900 font-bold">Social Media</h1>
+            <div className="lg:w-[30%]">
+              <h1 className="text-3xl text-yellow-900 font-bold">
+                Social Media
+              </h1>
               <List className="pt-3">
                 {FdataTwo.map((item, i) => (
                   <ListItems

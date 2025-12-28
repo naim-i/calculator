@@ -43,7 +43,7 @@ const Navbar = () => {
     <div className="w-full bg-gray-500 flex items-center pt-6">
       <Container>
         <Flex className="justify-between items-center relative">
-          <div className="ml-5 lg:ml-0">
+          <div className="ml-5 lg:ml-0 w-[50%] lg:w-auto md:w-auto">
             <Logo />
           </div>
           <div ref={userRef}>
