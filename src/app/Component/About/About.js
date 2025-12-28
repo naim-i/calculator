@@ -5,7 +5,7 @@ import Flex from "../Flex/Flex";
 const About = () => {
   return (
     <>
-      <div className="bg-[#0F0F0F] p-24">
+      <div className="bg-[#0F0F0F] p-10 md:lg:p-24">
         <Container>
           <div>
             {/* About header */}

@@ -11,30 +11,42 @@ import { FaBars } from "react-icons/fa6";
 import { useRef } from "react";
 
 const Navbar = () => {
-  let [show, setshow] = useState(false);
+  const [show, setShow] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
-  let userRef = useRef();
-
+  // Handle resize
   useEffect(() => {
-    const handleResize = (e) => {
-      if (window.innerWidth < 1024) {
-        setshow(false);
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setShow(true);
       } else {
-        setshow(true);
+        setShow(false);
       }
     };
+
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    document.body.addEventListener("click", (e) => {
-      if (userRef.current.contains(e.target)) {
-        setshow(true);
-      } else {
-        setshow(false);
-      }
-    });
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Click outside
+  useEffect(() => {
+    const handleOutside = (e) => {
+      if (
+        window.innerWidth < 1024 &&
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        setShow(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutside);
+    return () => document.removeEventListener("mousedown", handleOutside);
+  }, []);
   // const handleClick = () => {
   //   setshow(!show);
   // };
@@ -46,9 +58,10 @@ const Navbar = () => {
           <div className="ml-5 lg:ml-0 w-[50%] lg:w-auto md:w-auto">
             <Logo />
           </div>
-          <div ref={userRef}>
+          <div ref={menuRef}>
             <FaBars
-              // onClick={handleClick}
+              ref={buttonRef}
+              onClick={() => setShow((prev) => !prev)}
               className="text-white text-3xl block lg:hidden mr-5 absolute top-5 right-0"
             />
             {show && (

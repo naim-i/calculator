@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 const Service = () => {
   return (
     <>
-      <div className="bg-[#0F0F0F] p-24">
+      <div className="bg-[#0F0F0F] p-10 md:lg:p-24 ">
         <Container>
           {/* Service header */}
           <div className="text-center mb-12 :after:content-[''] after:block after:w-full after:h-2 after:bg-yellow-400 after:mx-auto after:mt-12 after:rounded-se-xl after:rounded-bl-xl">

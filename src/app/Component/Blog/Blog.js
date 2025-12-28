@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 
 const Blog = () => {
   return (
-    <div className="bg-[#0F0F0F] p-24">
+    <div className="bg-[#0F0F0F] p-10 md:lg:p-24">
       <Container>
         <div>
           {/* header part */}
@@ -67,7 +67,10 @@ const Blog = () => {
               <h3 className="text-2xl font-semibold text-yellow-400 mb-4">
                 Stay Updated
               </h3>
-              <p className="text-xl font-regular text-yellow-600/95">We publish fresh content regularly — bookmark this page or follow us to keep learning!</p>
+              <p className="text-xl font-regular text-yellow-600/95">
+                We publish fresh content regularly — bookmark this page or
+                follow us to keep learning!
+              </p>
             </div>
           </div>
         </div>
