@@ -85,7 +85,7 @@ export default function Calculator() {
                     <button
                       key={i}
                       onClick={op.fn}
-                      className="p-3 text-sm rounded-xl bg-blue-500/20 hover:bg-blue-500/30 text-white border border-white/20 shadow"
+                      className="p-1 lg:p-3 text-sm rounded-xl bg-blue-500/20 hover:bg-blue-500/30 text-white border border-white/20 shadow"
                     >
                       {op.label}
                     </button>
