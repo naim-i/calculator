@@ -52,7 +52,7 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="w-full bg-gray-500 flex items-center pt-6">
+    <div className="w-full bg-gray-500 flex items-center pt-4 lg:pt-6">
       <Container>
         <Flex className="justify-between items-center relative">
           <div className="ml-5 lg:ml-0 w-[50%] lg:w-auto md:w-auto">
@@ -62,7 +62,7 @@ const Navbar = () => {
             <FaBars
               ref={buttonRef}
               onClick={() => setShow((prev) => !prev)}
-              className="text-white text-3xl block lg:hidden mr-5 absolute top-5 right-0"
+              className="text-white text-3xl block lg:hidden mr-5 absolute top-2 right-0"
             />
             {show && (
               <List className="lg:flex gap-4 items-center absolute lg:static top-16 right-2 bg-gray-50 lg:bg-transparent rounded-2xl p-5 lg:p-0 shadow-2xl lg:shadow-none z-50">
