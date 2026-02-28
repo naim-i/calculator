@@ -11,7 +11,7 @@ import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-50 w-full pb-10 pt-10">
+    <div className="bg-slate-600 w-full pb-10 pt-10">
       <Container>
         <div className=" justify-center items-center pt-20">
           <Flex className="lg:justify-between items-center lg:items-start text-center lg:text-left flex-col lg:flex-row ">

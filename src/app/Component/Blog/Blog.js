@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 
 const Blog = () => {
   return (
-    <div className="bg-[#0F0F0F] p-10 md:lg:p-24">
+    <div className="bg-linear-to-br from-gray-900 via-gray-800 to-black p-10 md:lg:p-24">
       <Container>
         <div>
           {/* header part */}

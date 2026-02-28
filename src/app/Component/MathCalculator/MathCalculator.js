@@ -159,7 +159,7 @@ export default function MathCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F0F0F] p-6 flex justify-center">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-black p-6 flex justify-center">
       <div className="w-full max-w-7xl grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
         {/* LEFT SIDE */}
         <div className="space-y-8">

@@ -12,7 +12,7 @@ const Logo = (props) => (
     <defs>
       <style>
         {
-          "\n      .cls-1 {\n        fill: #0f0f0f;\n      }\n\n      .cls-1, .cls-2 {\n        stroke-width: 0px;\n      }\n\n      .cls-2 {\n        fill: #713f12;\n      }\n    "
+          "\n      .cls-1 {\n        fill: #BAE6FD;\n      }\n\n      .cls-1, .cls-2 {\n        stroke-width: 0px;\n      }\n\n      .cls-2 {\n        fill: #38BDF8;\n      }\n    "
         }
       </style>
     </defs>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const uid = () => Math.random().toString(36).substring(2, 10);
 const formatNum = (n, decimals = 2) =>
-  (Number.isFinite(n) ? Number(n).toFixed(decimals) : "0.00");
+  Number.isFinite(n) ? Number(n).toFixed(decimals) : "0.00";
 
 export default function HealthCalculator() {
   const [type, setType] = useState("bmi");
@@ -25,10 +25,10 @@ export default function HealthCalculator() {
       bmi < 18.5
         ? "Underweight"
         : bmi < 25
-        ? "Normal"
-        : bmi < 30
-        ? "Overweight"
-        : "Obese";
+          ? "Normal"
+          : bmi < 30
+            ? "Overweight"
+            : "Obese";
     return { bmi, category };
   };
 
@@ -166,9 +166,8 @@ export default function HealthCalculator() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0F0F0F] p-6 flex justify-center">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-black p-6 flex justify-center">
       <div className="w-full max-w-7xl grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
-
         {/* LEFT SIDE - Calculators + Result */}
         <div className="space-y-8">
           {/* Title */}
@@ -349,4 +348,3 @@ export default function HealthCalculator() {
     </div>
   );
 }
-

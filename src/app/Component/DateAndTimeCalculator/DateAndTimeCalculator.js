@@ -62,9 +62,7 @@ export default function DateAndTimeCalculator() {
       const d = new Date(date1);
       d.setDate(d.getDate() + Number(value));
       out.title = "Add Days";
-      out.data = [
-        { label: "Result Date", value: d.toLocaleString() },
-      ];
+      out.data = [{ label: "Result Date", value: d.toLocaleString() }];
     }
 
     // --- ADD HOURS ---
@@ -117,9 +115,8 @@ export default function DateAndTimeCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F0F0F] p-6 flex justify-center">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-black p-6 flex justify-center">
       <div className="w-full max-w-7xl grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
-
         {/* LEFT SIDE */}
         <div className="space-y-8">
           <h1 className="text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-yellow-400 to-yellow-600">
@@ -153,8 +150,7 @@ export default function DateAndTimeCalculator() {
                 onChange={(e) => setDate1(e.target.value)}
                 className="p-3 rounded-xl bg-[#454545] border border-yellow-600/20 text-yellow-300"
               />
-              {(type === "dateDiff" ||
-                type === "datetimeDiff") && (
+              {(type === "dateDiff" || type === "datetimeDiff") && (
                 <input
                   type="date"
                   value={date2}
@@ -260,9 +256,7 @@ export default function DateAndTimeCalculator() {
                 >
                   <div className="flex justify-between text-gray-400 text-sm mb-2">
                     <span>{h.time}</span>
-                    <span className="text-yellow-400 font-bold">
-                      {h.title}
-                    </span>
+                    <span className="text-yellow-400 font-bold">{h.title}</span>
                   </div>
 
                   <div className="text-xs flex gap-2 flex-wrap mb-3">
@@ -303,9 +297,7 @@ export default function DateAndTimeCalculator() {
                         className="p-2 bg-[#0F0F0F] border border-yellow-600/10 rounded-lg text-sm"
                       >
                         <p className="text-gray-400">{d.label}</p>
-                        <p className="font-bold text-yellow-300">
-                          {d.value}
-                        </p>
+                        <p className="font-bold text-yellow-300">{d.value}</p>
                       </div>
                     ))}
                   </div>

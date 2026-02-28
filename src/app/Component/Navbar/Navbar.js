@@ -52,7 +52,7 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="w-full bg-gray-500 flex items-center pt-4 lg:pt-6">
+    <div className="w-full bg-slate-800 flex items-center py-5">
       <Container>
         <Flex className="justify-between items-center relative">
           <div className="ml-5 lg:ml-0 w-[50%] lg:w-auto md:w-auto">
@@ -70,7 +70,7 @@ const Navbar = () => {
                   <ListItems key={index}>
                     <Link
                       href={item.link}
-                      className="lg:text-white text-gray-700 text-xl px-4 hover:text-yellow-400 hover:tracking-widest transition-all duration-300 pb-2 lg:pb-0 block"
+                      className="lg:text-white text-gray-700 text-xl px-4 hover:text-sky-400 hover:tracking-widest transition-all duration-300 pb-2 lg:pb-0 block"
                     >
                       {item.title}
                     </Link>

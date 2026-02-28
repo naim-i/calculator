@@ -116,7 +116,7 @@ export default function FinancialCalculator() {
   };
 
   return (
-    <div className=" bg-[#0F0F0F] p-6 flex justify-center pb-24 pt-24">
+    <div className=" bg-linear-to-br from-gray-900 via-gray-800 to-black p-6 flex justify-center pb-24 pt-24">
       <div className="w-full max-w-7xl grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
         {/* LEFT SIDE - Calculator + Result */}
         <div className="space-y-10">
