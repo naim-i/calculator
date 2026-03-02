@@ -19,14 +19,12 @@ const Footer = () => {
               <Logo />
             </div>
             <div className="lg:w-[30%] py-10 lg:py-0">
-              <h1 className="text-3xl text-yellow-900 font-bold">
-                Calculators
-              </h1>
+              <h1 className="text-3xl text-sky-300 font-bold">Calculators</h1>
               <List className="pt-3">
                 {FdataOne.map((item, i) => (
                   <ListItems
                     key={i}
-                    className="pb-2 font-medium text-xl hover:text-yellow-900 hover:tracking-widest transition-all duration-300"
+                    className="pb-2 font-medium text-xl text-white hover:text-sky-300 hover:tracking-widest transition-all duration-300"
                   >
                     <Link href={item.link}>{item.title}</Link>
                   </ListItems>
@@ -34,14 +32,12 @@ const Footer = () => {
               </List>
             </div>
             <div className="lg:w-[30%]">
-              <h1 className="text-3xl text-yellow-900 font-bold">
-                Social Media
-              </h1>
+              <h1 className="text-3xl text-sky-300 font-bold">Social Media</h1>
               <List className="pt-3">
                 {FdataTwo.map((item, i) => (
                   <ListItems
                     key={i}
-                    className="pb-2 font-medium  text-xl hover:text-yellow-900 hover:tracking-widest transition-all duration-300"
+                    className="pb-2 font-medium  text-xl text-white hover:text-sky-300 hover:tracking-widest transition-all duration-300"
                   >
                     <Link href={item.link}>{item.title}</Link>
                   </ListItems>
@@ -51,7 +47,7 @@ const Footer = () => {
           </Flex>
         </div>
         <div className="flex justify-center items-center pt-10">
-          <h1>
+          <h1 className="text-xl text-white font-medium">
             © 2025 <u>Name here</u>. All rights reserved.
           </h1>
         </div>
