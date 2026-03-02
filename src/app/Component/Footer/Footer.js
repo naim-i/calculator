@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../Container/Container";
 import Flex from "../Flex/Flex";
-import Image from "next/image";
 import List from "../List/List";
 import ListItems from "../ListItems/ListItems";
 import Link from "next/link";

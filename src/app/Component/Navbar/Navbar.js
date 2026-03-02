@@ -56,7 +56,9 @@ const Navbar = () => {
       <Container>
         <Flex className="justify-between items-center relative">
           <div className="ml-5 lg:ml-0 w-[50%] lg:w-auto md:w-auto">
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
           </div>
           <div ref={menuRef}>
             <FaBars
