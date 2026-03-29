@@ -6,7 +6,7 @@ import ListItems from "../ListItems/ListItems";
 import Link from "next/link";
 import FdataOne from "./FdataOne";
 import FdataTwo from "./FdataTwo";
-import Logo from "../Logo/Logo";
+// import Logo from "../Logo/Logo";
 
 const Footer = () => {
   return (
@@ -15,7 +15,11 @@ const Footer = () => {
         <div className=" justify-center items-center pt-20">
           <Flex className="lg:justify-between items-center lg:items-start text-center lg:text-left flex-col lg:flex-row ">
             <div className="w-[50%] lg:w-auto">
-              <Logo />
+              <Link href="/">
+                <h3 className="font-extrabold text-4xl text-sky-100">
+                  CALCULATOR<span className="font-medium text-sky-400">RE</span>
+                </h3>
+              </Link>
             </div>
             <div className="lg:w-[30%] py-10 lg:py-0">
               <h1 className="text-3xl text-sky-300 font-bold">Calculators</h1>
@@ -47,7 +51,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center items-center pt-10">
           <h1 className="text-xl text-white font-medium">
-            © 2025 <u>Name here</u>. All rights reserved.
+            © 2025 <u className="text-sky-200">CALCULATORRE</u>. All rights reserved.
           </h1>
         </div>
       </Container>

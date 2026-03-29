@@ -6,9 +6,10 @@ import Flex from "../Flex/Flex";
 import Container from "../Container/Container";
 import Link from "next/link";
 import MenuData from "@/app/Component/Navbar/MenuData";
-import Logo from "../Logo/Logo";
+// import Logo from "../Logo/Logo";
 import { FaBars } from "react-icons/fa6";
 import { useRef } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -57,7 +58,7 @@ const Navbar = () => {
         <Flex className="justify-between items-center relative">
           <div className="ml-5 lg:ml-0 w-[50%] lg:w-auto md:w-auto">
             <Link href="/">
-              <Logo />
+              <h3 className="font-extrabold text-4xl text-sky-100">CALCULATOR<span className="font-medium text-sky-400">RE</span></h3>
             </Link>
           </div>
           <div ref={menuRef}>
