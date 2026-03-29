@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Calculator App",
-    template: "%s | Calculator App",
+    default: "Calculatorre",
+    template: "%s | Calculatorre",
   },
   description: "Modern calculator built with Next.js, Tailwind & Framer Motion",
 };
