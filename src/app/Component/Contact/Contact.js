@@ -26,7 +26,8 @@ const Contact = () => {
                 <h5 className="text-yellow-400 text-xl font-bold">
                   Contact Information
                 </h5>
-                <p className="text-white ">Email: support@[yourwebsite].com</p>
+                <p className="text-white ">Email: naimrahman.it@gmail.com</p>
+                <p className="text-white ">WhatsApp: +8801971762844</p>
               </div>
               {/* Contact content Two */}
               <Flex className="justify-end">
