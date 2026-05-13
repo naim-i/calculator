@@ -1,5 +1,5 @@
 const FdataTwo = [
-  { title: "Facebook", link: "/" },
-  { title: "Twitter", link: "/" },
+  { title: "Comming soon", link: "/" },
+  { title: "", link: "/" },
 ];
 export default FdataTwo;
